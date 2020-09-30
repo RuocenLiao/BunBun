@@ -1,0 +1,81 @@
+.img {
+  display: inline;
+  align: center;
+}
+
+.nav {
+  color: #A38A81;
+  font-size: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+
+.a{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  background-color: #FED8B1;
+}
+
+.c{
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  background-color: #FED8B1;
+}
+
+.box {
+  background-color: #FED8B1;
+  color: black;
+}
+
+
+
+p {
+    font-family: Ribeye;
+  }
+  
+  h1 {
+    color: maroon;
+  }
+  
+  h2.destination {
+    font-family: Ribeye;
+  }
+  
+  .title {
+    color: teal;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .publish-time {
+    color: gray;
+  }
+  
+  h5 {
+    color: rebeccapurple;
+  }
+  
+  .cursive {
+    font-family: Ribeye;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+  
+  .description h5 {
+    color: teal;
+  }
+  
+  h5,
+  p {
+    font-family: Ribeye;
+  }
+  
+  
