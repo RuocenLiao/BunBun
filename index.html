@@ -4,46 +4,56 @@
   <head>
     <title>Bun Bun Bake Shop</title>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
+      rel="stylesheet">
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <span class="nav">
-        <img width="50" src="./cinnamon.jpg" alt="An icon of cinnamion roll" align="center"/>
-        Bun Bun Bake Shop
-
+        <img class="icon" src="./cinnamon.jpg" alt="An icon of cinnamion roll" align="center"/>
+        <span id="name">Bun Bun Bake Shop</span>
       </span>
-      <span class="nav">                      Home</span>
-      <span class="nav">     Products</span>
-      <span class="nav">     About</span>
-      <hr/>
+      <span class="nav home">
+        <a class="nav home" href="./index.html" target="_blank">
+          &emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+          &emsp; &emsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <u><b>Home</b></u>
+        </a>
+      </span>
+      <span class="nav products">
+        <a class="nav products" href="./products.html">
+          &nbsp; &nbsp; &nbsp;Products
+        </a>
+      </span>
+      <span class="nav about">&nbsp; &nbsp; &nbsp;About&nbsp; &nbsp; &nbsp; </span>
     </header> 
 
     <main>
-      <div class="grid">
-        <div class="box a"><p></p></div>
+      <div class="mainGrid">
+        <div class="box placeHolder"><p></p></div>
 
-        <div class="box b">
-          <img width="1000" src="./8.jpg" alt="An image of making cinnamon roll"/>
-          <h1 class="title cursive capitalize" >Cinnamon rolls made at your local bakery</h1>
+        <div class="box container">
+          <img class="backgroundImage" width="1000" src="./8.jpg" alt="An image of making cinnamon roll"/>
+          <p class="welcome title bold capitalize" >Cinnamon rolls <br> made <br> at your local bakery!</p>
+          <div class="order"><a href="./products.html"><h2 id="button">&nbsp; &nbsp;Order Online&nbsp; &nbsp;</h2></a></div>
+          <div class="note "><h3>**We deliver to Pittsburgh Area!</h3></div>
         </div>
         
-        <div class="box c"></div>
-      </div>
-      
-      <h2 class="destination">1. Florence, Italy</h2>
-      <div class="description title capitlaize"><a href="http://travel.nationalgeographic.com/travel/city-guides/florence-italy/" target="_blank"><h2>Order Online</h2></a>.
-        <h5>Top Attractions</h5>
-        <ul>
-          <li>Museums</li>
-          <li>Bike Tours</li>
-          <li>Historical Monuments</li>
-        </ul>
-      </div>
     </main> 
 
     <footer>
-      <p>&mdash;Best of luck with your travels, and be sure to send pictures and stories. We"d love to hear them!</p>
+      <hr/>
+      <span>
+        <img width="100" src="./baker.png" alt="An icon of a baker" align="left"/>
+      </span>
+      <span class="contactInfo">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
+        (412) 123 4567
+      </span>
+      <span>
+        <img width="100" src="./baker.png" alt="An icon of a baker" align="right"/>
+      </span>
+
     </footer>
 
   </body>
