@@ -64,13 +64,13 @@ body {
 
 }
 
-#button {
-  background-color: #F1C69B;
-  color: white;
-  font-size: 23px;
-  border-radius: 3px;
-  text-shadow: 1px 1px rgb(100, 0, 0, 0.73); 
-  box-shadow: 1px 1px rgb(100, 0, 0, 0.73); 
+.button {
+  background-color: #F1C69B !important;
+  color: white !important;
+  font-size: 23px !important;
+  border-radius: 3px !important;
+  text-shadow: 1px 1px rgb(100, 0, 0, 0.73) !important; 
+  box-shadow: 1px 1px rgb(100, 0, 0, 0.73) !important; 
 }
 
 .container {
@@ -280,13 +280,13 @@ body {
   font-size: 28px !important;
 }
 
-#dPrice {
-  font-size: 25px;
+.dPrice {
+  font-size: 25px !important;
 }
 
-#dSelect {
-  color: rgb(	100, 0, 0, 0.73);
-  font-size: 20px;
+.dSelect {
+  color: rgb(	100, 0, 0, 0.73) !important;
+  font-size: 20px !important;
 }
 
 
@@ -362,7 +362,3 @@ hr {
 .right {
   float: right;
 }
-
-
-
-
