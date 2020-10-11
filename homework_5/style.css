@@ -16,6 +16,7 @@ a {
   text-decoration: none;
 }
 
+
 body {
   font-family: 'Ribeye', cursive;
   padding-bottom: 100px;
@@ -27,18 +28,31 @@ body {
 .nav {
   color: #A38A81;
   font-size: 23px;
-  vertical-align: center;
+  padding-left: 2px;
 }
+
 .icon {
   width: 50px;
-  align: center;
 }
 
 #name {
+  margin-top: auto;
+  margin-bottom: auto;
+  
   font-size: 23px;
-  text-align: center;
+  vertical-align: middle;
 }
 
+.home {
+  text-decoration: underline bold;
+}
+
+/*align things vertically to the center of imagesm used for nav text*/
+.box {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
 
 /*index page*/
 .mainGrid {
@@ -335,13 +349,20 @@ hr {
 }
 
 #productFooter {
-  top: 168%;
+  top: 170%;
 }
 
 #detailsFooter {
-  top: 93%;
+  top: 96%;
 }
 
+/*image default to floatting to the left*/
+.baker {
+  width: 100px;
+}
 
-
-
+/*change float for the baker on the right*/
+.right {
+  display: float;
+  float: right;
+}
