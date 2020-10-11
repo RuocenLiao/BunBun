@@ -1,87 +1,364 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+  box-sizing: border-box;
+}
 
-  <head>
-    <title>Bun Bun Bake Shop</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
-      rel="stylesheet">
-  </head>
+main, header, footer{
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  padding: 2px 150px;
+}
 
-  <body>
 
-    <header>
-      <div class="box">
-        <span class="nav">
-          <a href="./index.html">
-          <img class="icon" src="./cinnamon.jpg" alt="An icon of cinnamion roll"/>
-          </a>
-        </span>
+/* get rid of underline for button links*/
+a {
+  text-decoration: none;
+}
 
-        <span class="nav name">
-          <a class="nav name" href="./index.html">
-            Bun Bun Bake Shop
-          </a>
-        </span>
 
-        <!--adding space between nav items with &emsp, &nbsp, &ensp-->
-        <span class="nav home">&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
-          &emsp; &emsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-        <span class="nav home">
-          <a class="nav home bold underline" href="./index.html">
-            Home
-          </a>
-        </span>
+body {
+  font-family: 'Ribeye', cursive;
+  border-radius: 15px;
+  color: white;
+}
 
-        <span class="nav products">&nbsp; &nbsp; &nbsp;</span>
-        <span class="nav products">
-          <a class="nav products" href="./products.html">
-            Products
-          </a>
-        </span>
+/*nav bar*/
+.nav {
+  color: #A38A81;
+  font-size: 23px;
+  padding-left: 2px;
+}
 
-        <span class="nav about">&nbsp; &nbsp; &nbsp;</span>
-        <span class="nav about">
-          About
-        </span>
+.icon {
+  width: 50px;
+}
 
-      </div>
-    </header>  
+#name {
+  margin-top: auto;
+  margin-bottom: auto;
+  
+  font-size: 23px;
+  vertical-align: middle;
+}
 
-    <main>
-      <div class="mainGrid">
-        <div class="placeHolder"><p></p></div>
+/*align things vertically to the center of imagesm used for nav text*/
+.box {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
 
-        <div class="container">
-          <img class="backgroundImage" src="./8.jpg" alt="An image of making cinnamon roll"/>
-          <p class="welcome title bold capitalize" >Cinnamon rolls <br> made <br> at your local bakery!</p>
-          <div class="order">
-            <a href="./products.html">
-              <h2 class="button">&nbsp; &nbsp;Order Online&nbsp; &nbsp;</h2>
-            </a>
-          </div>
-          <div class="note ">
-            <h3>**We deliver to Pittsburgh Area!</h3>
-          </div>
-        </div>
-      </div> 
-    </main> 
+/*index page*/
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #FED8B1;
+  border-radius: 5px;
 
-    <footer>
-      <br>
+}
 
-      <span>
-        <img class="baker" src="./baker.png" alt="An icon of a baker"/>
-      </span>
-      <span class="contactInfo">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
-        (412) 123 4567
-      </span>
-      <span>
-        <img class="baker right" src="./baker.png" alt="An icon of a baker"/>
-      </span>
+.placeHolder{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 
-    </footer>
+}
 
-  </body>
+.button {
+  background-color: #F1C69B !important;
+  color: white !important;
+  font-size: 23px !important;
+  border-radius: 3px !important;
+  text-shadow: 1px 1px rgb(100, 0, 0, 0.73) !important; 
+  box-shadow: 1px 1px rgb(100, 0, 0, 0.73) !important; 
+}
 
-</html>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.backgroundImage {
+  opacity: 0.7;
+  height: 580px;
+  width: auto;
+  padding-top: 5px;
+}
+
+/* text on image*/
+.welcome {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.order {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 52px !important;
+}
+
+
+.note {
+  position: absolute;
+  font-size: 55px;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prodTop {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/*the rest of product main is in a grid*/
+.prodGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 5px;
+  border-width: 2px;
+
+  grid-gap: 25px;
+
+  margin: 10px 0px;
+  justify-items: center;
+  justify-content: space-evenly;
+  background-color:rgb(254,216,177, 0.3);
+
+}
+
+.prodItem {
+  background-color: rgb(254,216,177, 1);
+  width: 100%;
+  height:100%;
+  border-radius: 3px;
+
+  justify-content: center;
+}
+
+/* https://stackoverflow.com/questions/37085983/how-to-center-image-inside-grid-col */
+.centerImage {
+  margin: auto;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+
+.vcenter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*end of citation*/
+
+.prodText {
+  font-size: 24px !important;
+  color: rgb(	100, 0, 0, 0.73) !important;
+  line-height: 70px;
+  padding-left: 10px;
+}
+
+
+.details {
+  display: inline-block;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  vertical-align: center;
+
+  background-color: #F1C69B;
+  color: rgb(	100, 0, 0, 0.73);
+  font-size: 25.5px;
+  border-radius: 3px;
+  
+  box-shadow: 2px 2px 2px 2px #A38A81;
+  margin: 15px;
+  padding: 2px;
+  line-height: 45px;
+}
+
+.prodImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  height: 290px;
+  width: auto;
+}
+
+/*details page*/
+.dGrid {
+  display: grid;
+  height: 590px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;/* 9 rows*/
+  grid-template-columns: 50px 1.5fr 1fr; /*one skinny column on the far left, other 3 evenly spaced*/
+  border-radius: 5px;
+  border-width: 2px;
+
+  margin: 10px 0px;
+  justify-items: left;
+  background-color:rgb(254,216,177, 0.3);
+
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+
+#back {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  padding: 3px 3px;
+  height: 50px;
+}
+
+.flavorText {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: center;
+}
+
+.holdPlaceImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  grid-column: 2 / 3;
+  grid-row: 2 / 8;
+  justify-content: center;
+
+  border-radius: 3px;
+  opacity: 0;
+}
+
+.holdPlaceTex {
+  justify-self: left;
+}
+
+
+.detailsImage2 {
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  width: 100%;
+
+  grid-column: 2 / 3;
+  grid-row: 2 / span 10;
+
+  border-radius: 3px;
+}
+
+.dText {
+  /*display: block;*/
+  margin-left: 0px;
+  margin-right: auto;
+  width: 100%;
+  
+  font-size: 18px;
+  color: rgb(	100, 0, 0, 0.73);
+  line-height: 50px;
+  margin-left: 10px;
+}
+
+.addToCart {
+  background-color: rgba(255, 153, 0, 0.53) !important;
+  line-height: 70px !important;
+  margin-left: 100px !important;
+  font-size: 28px !important;
+}
+
+.dPrice {
+  font-size: 25px !important;
+}
+
+.dSelect {
+  color: rgb(	100, 0, 0, 0.73) !important;
+  font-size: 20px !important;
+}
+
+
+body {
+    font-family: 'Ribeye', cursive;
+    border-radius: 15px;
+    color: white;
+}
+  
+h1 {
+  color: maroon;
+}
+
+
+h3 {
+  color: white;
+  font-size: 23px;
+  font-family: 'Ribeye Marrow', cursive;
+  text-shadow: 1px 1px rgb(	100, 0, 0, 0.73);
+}
+
+.title {
+  color: white;
+  font-size: 60px;
+  line-height: 65px;
+  text-shadow: 1px 1px rgb(	100, 0, 0, 0.73); 
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+h5 {
+  color: white;
+}
+
+hr {
+  opacity: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.contactInfo {
+  position: absolute;
+  top: 93%; /*for index.html position*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #A38A81;
+}
+
+#productFooter {
+  top: 152%;
+}
+
+#detailsFooter {
+  top: 96%;
+}
+
+/*image default to floating to the left*/
+.baker {
+  width: 100px;
+}
+
+/*change float for the baker on the right*/
+.right {
+  float: right;
+}
