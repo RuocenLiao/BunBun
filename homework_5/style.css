@@ -42,10 +42,6 @@ body {
   vertical-align: middle;
 }
 
-.home {
-  text-decoration: underline bold;
-}
-
 /*align things vertically to the center of imagesm used for nav text*/
 .box {
   display: flex;
@@ -84,7 +80,6 @@ body {
 }
 
 .backgroundImage {
-  align: center;
   opacity: 0.7;
   height: 580px;
   width: auto;
@@ -333,7 +328,6 @@ h5 {
 
 hr {
   opacity: 0;
-  height: -2px;
 }
 
 .bold {
@@ -368,6 +362,6 @@ hr {
 
 /*change float for the baker on the right*/
 .right {
-  display: float;
   float: right;
 }
+
