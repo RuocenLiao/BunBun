@@ -349,14 +349,14 @@ hr {
 }
 
 #productFooter {
-  top: 170%;
+  top: 152%;
 }
 
 #detailsFooter {
   top: 96%;
 }
 
-/*image default to floatting to the left*/
+/*image default to floating to the left*/
 .baker {
   width: 100px;
 }
