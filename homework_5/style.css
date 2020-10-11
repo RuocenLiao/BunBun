@@ -112,8 +112,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
-/*products page*/
 .prodTop {
   align-self: center;
   width: 100%;
@@ -162,9 +160,9 @@ body {
 }
 /*end of citation*/
 
-#prodText {
-  font-size: 24px;
-  color: rgb(	100, 0, 0, 0.73);
+.prodText {
+  font-size: 24px !important;
+  color: rgb(	100, 0, 0, 0.73) !important;
   line-height: 70px;
   padding-left: 10px;
 }
@@ -364,4 +362,7 @@ hr {
 .right {
   float: right;
 }
+
+
+
 
