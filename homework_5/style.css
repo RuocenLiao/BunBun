@@ -42,6 +42,14 @@ body {
   vertical-align: middle;
 }
 
+.cart {
+  color: white;
+}
+
+.highlight {
+  box-shadow: 0px 0px !important;
+}
+
 /*align things vertically to the center of imagesm used for nav text*/
 .box {
   display: flex;
@@ -143,6 +151,7 @@ body {
   border-radius: 3px;
 
   justify-content: center;
+  padding-bottom: 15px;
 }
 
 /* https://stackoverflow.com/questions/37085983/how-to-center-image-inside-grid-col */
@@ -244,9 +253,7 @@ body {
   opacity: 0;
 }
 
-.holdPlaceTex {
-  justify-self: left;
-}
+
 
 
 .detailsImage2 {
@@ -288,6 +295,77 @@ body {
   color: rgb(	100, 0, 0, 0.73) !important;
   font-size: 20px !important;
 }
+
+/*cart page css*/
+.cGrid {
+  display: grid;
+  height: 590px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;/* 9 rows*/
+  grid-template-columns: 1.1fr 2fr 0.8fr; 
+  border-radius: 5px;
+  border-width: 2px;
+
+  margin: 0px 0px;
+  justify-items: right;
+  padding: 0px 10px;
+  background-color:rgb(254,216,177, 0.3);
+
+}
+#checkout {
+
+}
+
+.right{
+  justify-self: right;
+  padding-right: 5px;
+}
+
+.alignEnd {
+  align-self: end !important;
+}
+.cartText {
+  font-size: 24px;
+  color: rgb(	100, 0, 0, 0.73) !important;
+  line-height: 45px;
+  padding-top: 0px;
+}
+
+.topNoSpace {
+  line-height: 45px !important;
+  padding-top: 10px !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.smallLable {
+  font-size: 17px !important;
+}
+
+#x {
+  width: 50px;
+  padding-top: 10px;
+}
+
+.bg {
+  background-color:#FED8B1;
+}
+
+
+.left {
+  justify-self: left;
+  padding-left: 0px !important;
+}
+.cartImage {
+  display: block;
+  margin-left: 20px;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 3px;
+  padding-top: 6px;
+}
+
 
 
 body {
@@ -346,13 +424,16 @@ hr {
 }
 
 #productFooter {
-  top: 168%;
+  top: 155%;
 }
 
 #detailsFooter {
-  top: 96%;
+  top: 94%;
 }
 
+#cartFooter {
+  top: 92%;
+}
 /*image default to floating to the left*/
 .baker {
   width: 100px;
@@ -362,3 +443,7 @@ hr {
 .right {
   float: right;
 }
+
+
+
+
