@@ -73,25 +73,34 @@
         <div>
           <div class="dText" id="dPrice">$3.99</div>
           <!--quantity section-->
-          <div class="dText dSelect">Select Quantity:</div>
-          <span class="dText button">&nbsp; 1 &nbsp;</span>
-          <span class="dText dSelect">&nbsp;</span>
-          <span class="dText button">&nbsp; 3 &nbsp;</span>
-          <span class="dText dSelect">&nbsp;</span>
-          <span class="dText button">&nbsp; 6 &nbsp;</span>
-          <span class="dText dSelect">&nbsp;</span>
-          <span class="dText button">&nbsp; 12 &nbsp;</span>
-          <span class="dText dSelect">&nbsp;<br></span>
+          <div class="dText ">Select Quantity:</div>
+          <span class="dText ">&nbsp;</span>
+            <button class="dSelect" id="1" onclick="select1()">
+              &nbsp; 1 &nbsp;
+            </button>
+          <span class="dText ">&nbsp;</span>
+            <button class="dSelect" id="3" onclick="select3()">
+              &nbsp; 3 &nbsp;
+            </button>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="6" onclick="select6()">
+            &nbsp; 6 &nbsp;
+          </button>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="12" onclick="select12()">
+            &nbsp; 12 &nbsp;
+          </button>
+          <span class="dText ">&nbsp;<br></span>
           <!--topping section-->
-          <div class="dText dSelect">Select Topping: </div>
+          <div class="dText ">Select Topping: </div>
           <span class="dText button">&nbsp; None &nbsp;</span>
-          <span class="dText dSelect">&nbsp;<br></span>
+          <span class="dText ">&nbsp;<br></span>
           <span class="dText button">&nbsp; Double Chocolate &nbsp;</span>
-          <span class="dText dSelect">&nbsp;<br></span>
+          <span class="dText ">&nbsp;<br></span>
           <span class="dText button">&nbsp; Sugar-milk &nbsp;</span>
-          <span class="dText dSelect">&nbsp;<br></span>
+          <span class="dText ">&nbsp;<br></span>
           <span class="dText button">&nbsp; Vanilla-milk &nbsp;</span>
-          <span class="dText dSelect">&nbsp;<br></span>
+          <span class="dText ">&nbsp;<br></span>
 
           <span class="dText addToCart button">
             &nbsp;&nbsp; &nbsp;  Add To Cart &nbsp;&nbsp; &nbsp; 
@@ -115,6 +124,8 @@
       </span>
 
     </footer>
+
+    <script src="myScript.js"></script>
 
   </body>
 
