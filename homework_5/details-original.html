@@ -6,9 +6,11 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
     rel="stylesheet">
+    <script src="myScript.js" type="text/javascript">
+    </script>
   </head>
 
-  <body>
+  <body onload="rerenderCart()">
 
     <header>
       <div class="box">
@@ -24,9 +26,9 @@
           </a>
         </span>
 
-        <!--adding space between nav items with &emsp, &nbsp, &ensp-->
+        <!--adding space between nav items with &emsp, &nbsp, &ensp; add 2 &nbsp; &nbsp; to restore cart button-->
         <span class="nav home">&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
-          &emsp; &emsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+          &emsp; &emsp; &nbsp;</span>
         <span class="nav home">
           <a class="nav home" href="./index.html">
             Home
@@ -49,7 +51,9 @@
         <span class="nav cart button">
           <a class="nav cart" href="./cart.html">
             &nbsp; Cart &nbsp;
-          </a>  
+          </a>
+          <span id="count">0</span>
+          <span>&nbsp;</span>
         </span>
       </div>
     </header> 
@@ -115,7 +119,7 @@
 
           <span class="dText ">&nbsp;<br></span>
 
-          <span class="dText addToCart button">
+          <span class="dText addToCart button" id="addToCart" onclick="addItem()">
             &nbsp;&nbsp; &nbsp;  Add To Cart &nbsp;&nbsp; &nbsp; 
           </span>
         </div>
@@ -138,7 +142,7 @@
 
     </footer>
 
-    <script src="myScript.js"></script>
+
 
   </body>
 
