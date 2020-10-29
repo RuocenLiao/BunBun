@@ -6,9 +6,11 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
     rel="stylesheet">
+    <script src="myScript.js" type="text/javascript">
+    </script>
   </head>
 
-  <body>
+  <body onload="rerenderCart()">
 
     <header>
       <div class="box">
@@ -26,7 +28,7 @@
 
         <!--adding space between nav items with &emsp, &nbsp, &ensp-->
         <span class="nav home">&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
-          &emsp; &emsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+          &emsp; &emsp; &nbsp;</span>
         <span class="nav home">
           <a class="nav home" href="./index.html">
             Home
@@ -47,9 +49,11 @@
 
         <span class="nav cart">&nbsp; &nbsp; &nbsp;</span>
         <span class="nav cart button">
-          <a class="nav cart highlight" href="./cart.html">
+          <a class="nav cart" href="./cart.html">
             &nbsp; Cart &nbsp;
-          </a>  
+          </a>
+          <span id="count">0</span>
+          <span>&nbsp;</span>
         </span>
       </div>
     </header> 
@@ -65,7 +69,11 @@
               <span class="button" id="checkout">&nbsp;Check out>>&nbsp;</span>
             </a>  
         </div>
-        <span class="grid-item cartText">Your added 0 item(s):</span>
+        <div>
+          <span class="grid-item cartText">Your added</span>
+          <span class="grid-item cartText" id="cartcount">0</span>
+          <span class="grid-item cartText">item(s):</span>
+        </div>
         <span class="holdPlaceText prodText"></span>
 
         <span class="grid-item cartText right">Total: $3.99</span>
