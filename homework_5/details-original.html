@@ -75,7 +75,7 @@
           <!--quantity section-->
           <div class="dText ">Select Quantity:</div>
           <span class="dText ">&nbsp;</span>
-            <button class="dSelect" id="1" onclick="select1()">
+            <button class="dSelect dPreselect" id="1" onclick="select1()">
               &nbsp; 1 &nbsp;
             </button>
           <span class="dText ">&nbsp;</span>
@@ -93,13 +93,26 @@
           <span class="dText ">&nbsp;<br></span>
           <!--topping section-->
           <div class="dText ">Select Topping: </div>
-          <span class="dText button">&nbsp; None &nbsp;</span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect dPreselect" id="None" onclick="selectNone()">
+            &nbsp; None &nbsp;
+          </button>
           <span class="dText ">&nbsp;<br></span>
-          <span class="dText button">&nbsp; Double Chocolate &nbsp;</span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="Choc" onclick="selectChoc()">
+            &nbsp; Double Chocolate &nbsp;
+          </button>
           <span class="dText ">&nbsp;<br></span>
-          <span class="dText button">&nbsp; Sugar-milk &nbsp;</span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="Sugar" onclick="selectSugar()">
+            &nbsp; Sugar-milk &nbsp;
+          </button>
           <span class="dText ">&nbsp;<br></span>
-          <span class="dText button">&nbsp; Vanilla-milk &nbsp;</span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="Vani" onclick="selectVani()">
+            &nbsp; Vanilla-milk &nbsp;
+          </button>
+
           <span class="dText ">&nbsp;<br></span>
 
           <span class="dText addToCart button">
