@@ -171,7 +171,7 @@ body {
 /*end of citation*/
 
 .prodText {
-  font-size: 24px !important;
+  font-size: 26px !important;
   color: rgb(	100, 0, 0, 0.73) !important;
   line-height: 70px;
   padding-left: 10px;
@@ -288,19 +288,27 @@ body {
   font-size: 28px !important;
 }
 
-.dPrice {
-  font-size: 25px !important;
+#dPrice {
+  font-size: 25px;
 }
 
+
+
 .dSelect {
-  color: rgb(	100, 0, 0, 0.73);
+  color: rgb(100, 0, 0, 0.60);
   font-size: 20px !important;
-  background-color: rgb(254,216,177, 0.3);
+  background-color: rgb(254,216,177, 0.6);
   border: none;
   height: 30px;
   font-family: 'Ribeye', cursive !important;
   border-radius: 3px !important;
   cursor: pointer;
+}
+
+.dPreselect {
+  color: rgb(100, 0, 0, 1);
+  background-color: rgb(254,216,177, 1);
+  box-shadow: 2px 2px rgb(100, 0, 0, 0.73);
 }
 
 /*cart page css*/
