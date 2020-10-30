@@ -1,27 +1,50 @@
-let store = JSON.parse(localStorage.getItem('store') || "{count: 0}");
+
+//store saves the count of items in cart
+//if has previously visited page before, the previous count will be restored
+let defaultS = {count: 0};
+let store = JSON.parse(localStorage.getItem('store') || JSON.stringify(defaultS));
 localStorage.setItem("store", JSON.stringify(store));
 
 /*document.getElementById("addToCart").addEventListener("click", addItem);*/
 
-rerenderCart();
+
 
 function rerenderCart() {
     let s = JSON.parse(localStorage.getItem("store"));
-    let c = s.count+1;
-    let cs = c.toString();
+    let c = s.count;
+    let cs = JSON.stringify(c);
 
     let c1 = document.getElementById("cartcount");
     let c2 = document.getElementById("count");
-    if (c1) {c1.innerHTML=cs;}
-    if (c2) {c2.innerHTML=cs;}
+    if (c1) {
+        c1.innerHTML=cs;
+        console.log("c1");
+    }
+    if (c2) {
+        c2.innerHTML=cs;
+        console.log("c2");
+    }
+    console.log(cs);
 }
+
+//rerenderCart();
+
 function addItem() {
     let s = JSON.parse(localStorage.getItem("store"));
     let c = s.count+1;
-    let cs = c.toString();
-    //document.getElementById("count").innerHTML = cs;
-    //document.getElementById("cartcount").innerHTML = cs;
-    rerenderCart();
+    let cs = JSON.stringify(c);
+
+    let c1 = document.getElementById("cartcount");
+    let c2 = document.getElementById("count");
+    if (c1) {
+        c1.innerHTML=cs;
+        console.log("c1");
+    }
+    if (c2) {
+        c2.innerHTML=cs;
+        console.log("c2");
+    }
+
     s.count = s.count+1;
     localStorage.setItem("store", JSON.stringify(s));
     console.log(s.count);
