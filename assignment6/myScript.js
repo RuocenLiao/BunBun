@@ -1,3 +1,4 @@
+
 //store saves the count of items in cart
 //if has previously visited page before, the previous count will be restored
 let defaultS = {count: 0};
@@ -127,7 +128,8 @@ function selectNone() {
     document.getElementById('None').style.color='rgb(100, 0, 0, 1)';
     document.getElementById('None').style.backgroundColor='rgb(254,216,177, 1)';
     document.getElementById('None').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
-    document.getElementById('toppingImg').style.opacity='0.0';
+    document.getElementById('toppingImg').src='./nt.png';
+
 
     document.getElementById('Choc').style.color='rgb(100, 0, 0, 0.60)';
     document.getElementById('Choc').style.backgroundColor='rgb(254,216,177, 0.6)';
@@ -151,7 +153,7 @@ function selectChoc() {
     document.getElementById('Choc').style.backgroundColor='rgb(254,216,177, 1)';
     document.getElementById('Choc').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
     document.getElementById('toppingImg').src='./c.png';
-    document.getElementById('toppingImg').style.opacity='1.0';
+
 
     document.getElementById('Sugar').style.color='grgb(100, 0, 0, 0.6)';
     document.getElementById('Sugar').style.backgroundColor='rgb(254,216,177, 0.6)';
@@ -175,7 +177,6 @@ function selectSugar() {
     document.getElementById('Sugar').style.backgroundColor='rgb(254,216,177, 1)';
     document.getElementById('Sugar').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
     document.getElementById('toppingImg').src='./s.png';
-    document.getElementById('toppingImg').style.opacity='1.0';
 
     document.getElementById('Vani').style.color='rgb(100, 0, 0, 0.6)';
     document.getElementById('Vani').style.backgroundColor='rgb(254,216,177, 0.6)';
@@ -199,5 +200,4 @@ function selectVani() {
     document.getElementById('Vani').style.backgroundColor='rgb(254,216,177, 1)';
     document.getElementById('Vani').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
     document.getElementById('toppingImg').src='./v.png';
-    document.getElementById('toppingImg').style.opacity='1.0';
 };
