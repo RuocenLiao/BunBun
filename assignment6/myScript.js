@@ -3,6 +3,7 @@ localStorage.setItem("store", JSON.stringify(store));
 
 /*document.getElementById("addToCart").addEventListener("click", addItem);*/
 
+rerenderCart();
 
 function rerenderCart() {
     let s = JSON.parse(localStorage.getItem("store"));
