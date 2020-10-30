@@ -15,3 +15,5 @@ Other:
 -added a details page for each flavor
 
 Also see hw6a_Refleciton.pdf
+
+GitHub Page Link: https://ruocenliao.github.io/PUI2020/assignment6/ 
