@@ -1,4 +1,3 @@
-
 //store saves the count of items in cart
 //if has previously visited page before, the previous count will be restored
 let defaultS = {count: 0};
@@ -54,6 +53,8 @@ function addItem() {
 /*change display of quantity selection*/
 function select1() {
 
+    document.getElementById('dPrice').innerHTML='$3.99';
+
     document.getElementById('1').style.color='rgb(100, 0, 0, 1)';
     document.getElementById('1').style.backgroundColor='rgb(254,216,177, 1)';
     document.getElementById('1').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
@@ -70,7 +71,11 @@ function select1() {
     document.getElementById('12').style.backgroundColor='rgb(254,216,177, 0.6)';
     document.getElementById('12').style.boxShadow='0px 0px'; 
 };
+
 function select3() {
+
+    document.getElementById('dPrice').innerHTML='$9.99';
+
     document.getElementById('1').style.color='rgb(100, 0, 0, 0.60)';
     document.getElementById('1').style.backgroundColor='rgb(254,216,177, 0.6)';
     document.getElementById('1').style.boxShadow='0px 0px'; 
@@ -87,7 +92,10 @@ function select3() {
     document.getElementById('12').style.backgroundColor='rgb(254,216,177, 0.6)';
     document.getElementById('12').style.boxShadow='0px 0px'; 
 };
+
 function select6() {
+    document.getElementById('dPrice').innerHTML='$21.99';
+
     document.getElementById('1').style.color='rgb(100, 0, 0, 0.6)';
     document.getElementById('1').style.backgroundColor='rgb(254,216,177, 0.6)';
     document.getElementById('1').style.boxShadow='0px 0px'; 
@@ -104,7 +112,10 @@ function select6() {
     document.getElementById('12').style.backgroundColor='rgb(254,216,177, 0.6)';
     document.getElementById('12').style.boxShadow='0px 0px'; 
 };
+
 function select12() {
+    document.getElementById('dPrice').innerHTML='$43.99';
+
     document.getElementById('1').style.color='rgb(100, 0, 0, 0.6)';
     document.getElementById('1').style.backgroundColor='rgb(254,216,177, 0.6)';
     document.getElementById('1').style.boxShadow='0px 0px'; 
