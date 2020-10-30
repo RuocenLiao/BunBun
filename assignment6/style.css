@@ -335,7 +335,6 @@ body {
 
 }
 #checkout {
-
 }
 
 .right{
@@ -347,10 +346,22 @@ body {
   align-self: end !important;
 }
 .cartText {
-  font-size: 24px;
+  font-size: 27px;
   color: rgb(	100, 0, 0, 0.73) !important;
   line-height: 45px;
   padding-top: 0px;
+}
+
+.pad {
+  line-height: 50px;
+}
+
+.padRight {
+  padding-right: 53px;
+}
+
+.padLeft {
+  padding-left: 167px;
 }
 
 .topNoSpace {
