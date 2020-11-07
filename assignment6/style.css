@@ -311,6 +311,12 @@ body {
   box-shadow: 2px 2px rgb(100, 0, 0, 0.73);
 }
 
+.dChosen {
+  color: rgb(100, 0, 0, 1);
+  background-color: rgb(254,216,177, 1);
+  box-shadow: 2px 2px rgb(100, 0, 0, 0.73);
+}
+
 .toppingImg {
   position: absolute;
   top: 27%; /*for index.html position*/
@@ -322,7 +328,7 @@ body {
 /*cart page css*/
 .cGrid {
   display: grid;
-  height: 480px;
+  /*height: 480px;*/
   border-radius: 5px;
   border-width: 2px;
 
@@ -339,7 +345,7 @@ body {
 
 .bottom {
   margin: 0px 0px;
-  padding-bottom: 50px;
+  padding-right: 5px !important;
   display: block;
 }
 
@@ -351,6 +357,9 @@ body {
   font-size: 30px !important;
 }
 
+.quantity, .topping {
+  padding: 5px 10px !important;
+}
 .right{
   justify-self: right;
   padding-right: 5px;
@@ -394,6 +403,7 @@ body {
 #x {
   width: 50px;
   padding-top: 10px;
+  cursor: pointer;
   /*box-shadow: 1px 1px rgb(100, 0, 0, 0.73) !important; */
 }
 
@@ -406,6 +416,7 @@ body {
   justify-items: right;
   padding: 0px 10px;
   height: 225px;
+  background-color:#FED8B1;
 }
 
 .bg {
@@ -503,8 +514,17 @@ hr {
   top: 92%;
 }
 /*image default to floating to the left*/
+.bakerL {
+  margin-right: 250px;
+}
+
 .baker {
   width: 100px;
+}
+
+.add {
+  width: 40%;
+  margin: auto;
 }
 
 /*change float for the baker on the right*/
