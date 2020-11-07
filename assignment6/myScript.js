@@ -58,24 +58,7 @@ function select1() {
     document.getElementById('1').className="dSelect dChosen";
     document.getElementById('3').className="dSelect";
     document.getElementById('6').className="dSelect";
-    document.getElementById('12').className="dSelect";
-    /*
-    document.getElementById('1').style.color='rgb(100, 0, 0, 1)';
-    document.getElementById('1').style.backgroundColor='rgb(254,216,177, 1)';
-    document.getElementById('1').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
-
-    document.getElementById('3').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('3').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('3').style.boxShadow='0px 0px'; 
-
-    document.getElementById('6').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('6').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('6').style.boxShadow='0px 0px'; 
-
-    document.getElementById('12').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('12').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('12').style.boxShadow='0px 0px'; 
-    */
+    document.getElementById('12').className="dSelect"
 };
 
 function select3() {
@@ -86,23 +69,7 @@ function select3() {
     document.getElementById('1').className="dSelect";
     document.getElementById('6').className="dSelect";
     document.getElementById('12').className="dSelect";
-/*
-    document.getElementById('1').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('1').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('1').style.boxShadow='0px 0px'; 
 
-    document.getElementById('3').style.color='rgb(100, 0, 0, 1)';
-    document.getElementById('3').style.backgroundColor='rgb(254,216,177, 1)';
-    document.getElementById('3').style.boxShadow='2px 2px rgb(100, 0, 0, 0.7)';
-
-    document.getElementById('6').style.color='grgb(100, 0, 0, 0.6)';
-    document.getElementById('6').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('6').style.boxShadow='0px 0px'; 
-
-    document.getElementById('12').style.color='rgb(100, 0, 0, 0.6)';
-    document.getElementById('12').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('12').style.boxShadow='0px 0px'; 
-    */
 };
 
 function select6() {
@@ -132,19 +99,7 @@ function selectNone() {
     document.getElementById('Choc').className="dSelect";
     document.getElementById('Sugar').className="dSelect";
     document.getElementById('Vani').className="dSelect";
-    /*
-    document.getElementById('Choc').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('Choc').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('Choc').style.boxShadow='0px 0px'; 
 
-    document.getElementById('Sugar').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('Sugar').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('Sugar').style.boxShadow='0px 0px'; 
-
-    document.getElementById('Vani').style.color='rgb(100, 0, 0, 0.60)';
-    document.getElementById('Vani').style.backgroundColor='rgb(254,216,177, 0.6)';
-    document.getElementById('Vani').style.boxShadow='0px 0px'; 
-    */
 };
 
 function selectChoc() {
