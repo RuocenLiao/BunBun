@@ -6,8 +6,8 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
     rel="stylesheet">
-    <script src="myScript.js" type="text/javascript">
-    </script>
+    <script src="myScript.js" type="text/javascript"></script>
+    <script src="cartStore.js" type="text/javascript" async></script>
   </head>
 
   <body onload="rerenderCart()">
@@ -79,7 +79,7 @@
           <!--quantity section-->
           <div class="dText ">Select Quantity:</div>
           <span class="dText ">&nbsp;</span>
-            <button class="dSelect dPreselect" id="1" onclick="select1()">
+            <button class="dSelect dChosen" id="1" onclick="select1()">
               &nbsp; 1 &nbsp;
             </button>
           <span class="dText ">&nbsp;</span>
@@ -98,7 +98,7 @@
           <!--topping section-->
           <div class="dText ">Select Topping: </div>
           <span class="dText ">&nbsp;</span>
-          <button class="dSelect dPreselect" id="None" onclick="selectNone()">
+          <button class="dSelect dChosen" id="None" onclick="selectNone()">
             &nbsp; None &nbsp;
           </button>
           <span class="dText ">&nbsp;<br></span>
