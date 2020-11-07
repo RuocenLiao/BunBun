@@ -6,8 +6,8 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
     rel="stylesheet">
-    <script src="myScript.js" type="text/javascript">
-    </script>
+    <script src="myScript.js" type="text/javascript"></script>
+    <script src="cartStore.js" type="text/javascript" async></script>
   </head>
 
   <body onload="rerenderCart()">
@@ -72,39 +72,38 @@
             <span class="cartText" id="cartcount">0</span>
             <span class="cartText">item(s):</span>
           </span>
-
-          <span class="cartText right">Total: $3.99</span>
+          
+          <span class="cartText right totalPrice">$0</span>
+          <span class="cartText right">Total: </span>
         </div>
       </div>
 
-      <div class="cGrid"> 
-        <div class="cContainer bg">
-          <span>
-            <img class="cartImage" src="./9.jpg" alt="An image of cinnamon roll"/>
-          </span>
+      <div class="cGrid" id="cartList"> 
         
-          <span class="left itemInfo">
-            <span class="cartText left">Original Cinnamon Roll<br></span>
-            <span class="cartText left">$3.99</span>
-            <br><br>
-            <span class="cartText button white smallLable alignEnd">&nbsp; 1 &nbsp;</span> 
-            <br>          
-            <span class="cartText button white smallLable">&nbsp; None &nbsp;</span>
-          </span>
+          <div class="cContainer">
+              <span>
+                <img class="cartImage" src="./9.jpg" alt="An image of cinnamon roll"/>
+              </span>
+            
+              <span class="left itemInfo">
+                <span class="cartText left flavor">Original Cinnamon Roll<br></span>
+                <span class="cartText left cartPrice">$3.99</span>
+                <br><br>
+                <span class="cartText button white smallLable alignEnd quantity">1</span> 
+                <br>          
+                <span class="cartText button white smallLable topping">None</span>
+              </span>
 
-          <div class="right">
-            <a href="./cart.html">
-              <img class="x" id="x" src="./x.png" alt="x icon"/>
-            </a> 
+              <div class="right">
+                <img class="x" id="x" src="./x.png" alt="x icon"/>
+              </div>
           </div>
-          
-        </div>
-        <br>
-        <!--hold place for reserved rows for additional cart items-->
+       
+        
 
-      
         <div class="topText bottom right">
-          <span class="cartText right">Total: $3.99</span>
+          <span class="cartText right totalPrice">$0</span>
+          <span class="cartText right">Total: </span>
           <div class="checkoutButton">
               <a href="./cart.html">
                 <span class="button right" id="checkout">&nbsp;Check out>>&nbsp;</span>
@@ -117,10 +116,10 @@
 
     <footer class="footer">
         <span>
-          <img class="baker" src="./baker.png" alt="An icon of a baker"/>
+          <img class="baker bakerL" src="./baker.png" alt="An icon of a baker"/>
         </span>
-        <span class="contactInfo" id="cartFooter">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
-          (412) 123 4567
+        <span class="">
+          <img class="add" src="./address.png" alt="Address and phone number of the shop"/>
         </span>
         <span>
           <img class="baker right" src="./baker.png" alt="An icon of a baker"/>
