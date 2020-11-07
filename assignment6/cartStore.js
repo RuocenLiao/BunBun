@@ -4,6 +4,12 @@
    Adapted from the tutorial and class example of To-do list(lab4)
 */
 
+/* list of name: value pairs with following properties:
+    flavor, quantity, topping, price, imgsrc
+*/
+
+const recoveredList = JSON.parse(localStorage.getItem('list') || '[]');
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -19,25 +25,23 @@ function cartItem(flavor, quantity, topping, price, imgsrc) {
 }
 
 function ready() {
-    /* list of name: value pairs with following properties:
-       flavor, quantity, topping, price, imgsrc
     
-    const recoveredList = JSON.parse(localStorage.getItem('list') || '[]');
-
-    if (recoveredList.length > 0) {
-        const ul = document.getElementById('myUL');
-
-        for (let i = 0; i < recoveredList.length; i++) {
-            const flavor = recoveredList[i].flavor;
-            const quantity = recoveredList[i].quantity;
-            const topping = recoveredList[i].topping;
-            const price = recoveredList[i].price;
-            const imgsrc = recoveredList[i].imgsrc;
-            addItemToCart(flavor, quantity, topping, price, imgsrc);
-          }
-    }
-    */
+    //if on cart page
+    // update cart list and cartcount and add event listener for remove buttons 
     if (document.getElementById("cartcount")) {
+        if (recoveredList.length > 0) {
+
+            for (let i = 0; i < recoveredList.length; i++) {
+                const flavor = recoveredList[i].flavor;
+                const quantity = recoveredList[i].quantity;
+                const topping = recoveredList[i].topping;
+                const price = recoveredList[i].price;
+                const imgsrc = recoveredList[i].imgsrc;
+                addItemToCart(flavor, quantity, topping, price, imgsrc);
+                console.log("add cart item")
+              }
+        }
+        
         updateCartTotal()
 
         var removeCartItemButtons = document.getElementsByClassName('x')
@@ -47,6 +51,7 @@ function ready() {
         }
     }
 
+    //OTW add eventlistener for addToCart button
     var addToCartButtons = document.getElementsByClassName('addToCart')
     for (var i = 0; i < addToCartButtons.length; i++) {
         console.log("+1")
@@ -60,7 +65,7 @@ function ready() {
 function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
-    updateCartTotal()
+    updateCartTotal();
 }
 
 
@@ -68,13 +73,23 @@ function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
     var flavor = shopItem.getElementsByClassName('flavorText')[0].innerText
-    console.log(flavor);
     var quantity = shopItem.getElementsByClassName('dChosen')[0].innerText
     var topping = shopItem.getElementsByClassName('dChosen')[1].innerText
-    var price = shopItem.getElementsById('dPrice')[0].innerText
+    var price = document.getElementById('dPrice').innerText
     var imgsrc = shopItem.getElementsByClassName('detailsImage2')[0].src
-    addItemToCart(flavor, quantity, topping, price, imgsrc)
-    updateCartTotal()
+    let item = new cartItem(flavor, quantity, topping, price, imgsrc);
+
+    console.log(flavor);
+    console.log(quantity);
+    console.log(price);
+
+    //stores item info in the list
+    //and loops through to create cart list when switch to cart page
+    recoveredList.push(item)
+    console.log(recoveredList.valueOf())
+    console.log(recoveredList[0].flavor)
+    
+    localStorage.setItem('list', JSON.stringify(recoveredList));
 }
 
 function addItemToCart(flavor, quantity, topping, price, imgsrc){
@@ -100,7 +115,7 @@ function addItemToCart(flavor, quantity, topping, price, imgsrc){
           <img class="x" id="x" src="./x.png" alt="x icon"/>
         </div>`
     cartRow.innerHTML = cartRowContents
-    cartItems.append(cartRow)
+    cartItems.appendChild(cartRow)
     cartRow.getElementsByClassName('x')[0].addEventListener('click', removeCartItem)
 }
 
@@ -109,13 +124,13 @@ function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cGrid')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cContainer')
     var total = 0
-    var count = 0
+    var count = cartRows.length
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cartPrice')[0]
         var price = parseFloat(priceElement.innerText.replace('$', ''))
         total = total + price
-        count = count + 1
+        
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('totalPrice')[0].innerText = '$' + total
