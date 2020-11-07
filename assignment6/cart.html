@@ -59,100 +59,72 @@
     </header> 
 
     <main>
+      <div class="topSpace topText">
+        <div class="checkoutButton">
+          <a class="button right" id="checkout" href="./cart.html">
+            &nbsp;Check out>>&nbsp;
+          </a>  
+        </div>
+        <br>
+        <div>
+          <span class="left">
+            <span class="cartText">You added</span>
+            <span class="cartText" id="cartcount">0</span>
+            <span class="cartText">item(s):</span>
+          </span>
+
+          <span class="cartText right">Total: $3.99</span>
+        </div>
+      </div>
 
       <div class="cGrid"> 
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-
-        <div class="grid-item">
-            <a href="./cart.html">
-              <span class="button" id="checkout">&nbsp;Check out>>&nbsp;</span>
-            </a>  
-        </div>
-        <div class="left">
-          <span class="grid-item cartText">You added</span>
-          <span class="grid-item cartText" id="cartcount">0</span>
-          <span class="grid-item cartText">item(s):</span>
-        </div>
-        <span class="holdPlaceText prodText"></span>
-
-        <span class="grid-item cartText right">Total: $3.99</span>
-
-        <div class="bg">
-          <img class="cartImage" src="./9.jpg" alt="An image of cinnamon roll"/>
-        </div>
-        <div class="left bg">
-          <span class="cartText left topNoSpace">Original Cinnamon Roll</span>
-          <br>
-          <span class="cartText left bg">
-            $3.99
+        <div class="cContainer bg">
+          <span>
+            <img class="cartImage" src="./9.jpg" alt="An image of cinnamon roll"/>
           </span>
-          <br>
-          <span class="pad"><br></span>
-          <span class="cartText button white smallLable alignEnd">&nbsp; 1 &nbsp;</span>
-          <span class="cartText button white smallLable alignEnd">&nbsp; 3 &nbsp;</span>
-          <span class="cartText button white smallLable alignEnd">&nbsp; 6 &nbsp;</span>
-          <span class="cartText button white smallLable">&nbsp; 12 &nbsp;</span>
-          <br>
-          <span class="cartText button white smallLable">&nbsp; None &nbsp;</span>
-          <span class="cartText button white smallLable">&nbsp; Double Chocolate &nbsp;</span>
-          <span class="cartText button white smallLable">&nbsp; Sugar-milk &nbsp;</span>
-          <span class="cartText button white smallLable">&nbsp; Vanilla-milk &nbsp;</span>
-          <span class="padRight"></span>
-
-        </div>
         
-        <div class="right bg">
-          <span class="grid-item x right bg">
+          <span class="left itemInfo">
+            <span class="cartText left">Original Cinnamon Roll<br></span>
+            <span class="cartText left">$3.99</span>
+            <br><br>
+            <span class="cartText button white smallLable alignEnd">&nbsp; 1 &nbsp;</span> 
+            <br>          
+            <span class="cartText button white smallLable">&nbsp; None &nbsp;</span>
+          </span>
+
+          <div class="right">
             <a href="./cart.html">
               <img class="x" id="x" src="./x.png" alt="x icon"/>
             </a> 
-          </span>
-          <span class="padLeft"></span>
+          </div>
+          
         </div>
-
+        <br>
         <!--hold place for reserved rows for additional cart items-->
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
 
-        
-        <span class="grid-item cartText right">Total: $3.99</span>
-        <span class="holdPlaceText prodText"></span>
-        <span class="holdPlaceText prodText"></span>
-        <div class="grid-item">
-            <a href="./cart.html">
-              <span class="button" id="checkout">&nbsp;Check out>>&nbsp;</span>
-            </a>  
+      
+        <div class="topText bottom right">
+          <span class="cartText right">Total: $3.99</span>
+          <div class="checkoutButton">
+              <a href="./cart.html">
+                <span class="button right" id="checkout">&nbsp;Check out>>&nbsp;</span>
+              </a>  
+          </div>
         </div>
-
       </div>
-
+ 
     </main> 
 
-    <footer>
-
-      <span>
-        <img class="baker" src="./baker.png" alt="An icon of a baker"/>
-      </span>
-      <span class="contactInfo" id="cartFooter">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
-        (412) 123 4567
-      </span>
-      <span>
-        <img class="baker right" src="./baker.png" alt="An icon of a baker"/>
-      </span>
-
+    <footer class="footer">
+        <span>
+          <img class="baker" src="./baker.png" alt="An icon of a baker"/>
+        </span>
+        <span class="contactInfo" id="cartFooter">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
+          (412) 123 4567
+        </span>
+        <span>
+          <img class="baker right" src="./baker.png" alt="An icon of a baker"/>
+        </span>
     </footer>
 
   </body>
