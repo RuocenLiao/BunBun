@@ -9,8 +9,6 @@
 */
 //localStorage.clear();
 
-
-//currently adding extra br when rewriting
 const recoveredList = JSON.parse(localStorage.getItem('list') || '[]');
 
 if (document.readyState == 'loading') {
