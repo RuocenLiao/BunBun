@@ -127,13 +127,14 @@ function updateCartTotal() {
     var list = []
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cartPrice')[0].innerHTML
+        var priceElement = cartRow.getElementsByClassName('cartPrice')[0]
+        var priceText = cartRow.getElementsByClassName('cartPrice')[0].innerHTML
         var flavor = cartRow.getElementsByClassName('flavor')[0].innerHTML
         var quantity = cartRow.getElementsByClassName('quantity')[0].innerHTML
         var topping = cartRow.getElementsByClassName('topping')[0].innerHTML
         var imgsrc = cartRow.getElementsByClassName('cartImage')[0].src
 
-        let item = new cartItem(flavor, quantity, topping, priceElement, imgsrc)
+        let item = new cartItem(flavor, quantity, topping, priceText, imgsrc)
         list.push(item)
 
         var price = parseFloat(priceElement.innerText.replace('$', ''))
