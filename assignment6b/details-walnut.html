@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Bun Bun Bake Shop</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
+    rel="stylesheet">
+    <script src="myScript.js" type="text/javascript"></script>
+    <script src="cartStore.js" type="text/javascript" async></script>
+
+  </head>
+
+  <body onload="rerenderCart()">
+
+    <header>
+      <div class="box">
+        <span class="nav">
+          <a href="./index.html">
+            <img class="icon" src="./cinnamon.jpg" alt="An icon of cinnamion roll"/>
+          </a>
+        </span>
+
+        <span class="nav name">
+          <a class="nav name" href="./index.html">
+            Bun Bun Bake Shop
+          </a>
+        </span>
+
+        <!--adding space between nav items with &emsp, &nbsp, &ensp; add 2 &nbsp; &nbsp; to restore cart button-->
+        <span class="nav home">&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+          &emsp; &emsp; &nbsp;</span>
+        <span class="nav home">
+          <a class="nav home" href="./index.html">
+            Home
+          </a>
+        </span>
+
+        <span class="nav products">&nbsp; &nbsp; &nbsp;</span>
+        <span class="nav products">
+          <a class="nav products bold underline" href="./products.html">
+            Products
+          </a>
+        </span>
+
+        <span class="nav about">&nbsp; &nbsp; &nbsp;</span>
+        <span class="nav about">
+          About
+        </span>
+
+        <span class="nav cart">&nbsp; &nbsp; &nbsp;</span>
+        <span class="nav cart button">
+          <a class="nav cart" href="./cart.html">
+            &nbsp; Cart &nbsp;
+          </a>
+          <span id="count">0</span>
+          <span>&nbsp;</span>
+        </span>
+      </div>
+    </header> 
+
+    <main>
+
+      <div class="dGrid"> 
+        <span class="grid-item">
+          <a href="./products.html">
+            <img class="prodTop" id="back" src="./back.png" alt="back icon"/>
+          </a>  
+        </span>
+        <span class="flavorText prodText">Walnut</span>
+        <span class="holdPlaceText prodText"></span>
+
+        <div><img class="holdPlaceImg" src="./w10.jpg" alt="An image of cinnamon roll"/></div>
+
+        <div><img class="detailsImage2" src="./w9.jpg" alt="An image of cinnamon roll"/></div>
+
+        <!--following are buttons and text for the information on the right of details page-->
+        <div>
+          <div class="dText" id="dPrice">$3.99</div>
+          <!--quantity section-->
+          <div class="dText ">Select Quantity:</div>
+          <span class="dText ">&nbsp;</span>
+            <button class="dSelect dChosen" id="1" onclick="select1()">
+              &nbsp; 1 &nbsp;
+            </button>
+          <span class="dText ">&nbsp;</span>
+            <button class="dSelect" id="3" onclick="select3()">
+              &nbsp; 3 &nbsp;
+            </button>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="6" onclick="select6()">
+            &nbsp; 6 &nbsp;
+          </button>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="12" onclick="select12()">
+            &nbsp; 12 &nbsp;
+          </button>
+          <span class="dText ">&nbsp;<br></span>
+          <!--topping section-->
+          <div class="dText ">Select Topping: </div>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect dChosen" id="None" onclick="selectNone()">
+            &nbsp; None &nbsp;
+          </button>
+          <span class="dText ">&nbsp;<br></span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="Choc" onclick="selectChoc()">
+            &nbsp; Double Chocolate &nbsp;
+          </button>
+          <span class="dText ">&nbsp;<br></span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="Sugar" onclick="selectSugar()">
+            &nbsp; Sugar-milk &nbsp;
+          </button>
+          <span class="dText ">&nbsp;<br></span>
+          <span class="dText ">&nbsp;</span>
+          <button class="dSelect" id="Vani" onclick="selectVani()">
+            &nbsp; Vanilla-milk &nbsp;
+          </button>
+
+          <span class="dText ">&nbsp;<br></span>
+
+          <span class="dText addToCart button" id="addToCart" onclick="addItem()">
+            &nbsp;&nbsp; &nbsp;  Add To Cart &nbsp;&nbsp; &nbsp; 
+          </span>
+        </div>
+
+      </div>
+
+      <span>
+        <img class="toppingImg" id="toppingImg" src="./nt.png" alt="An image of topping"/>
+      </span>
+
+    </main> 
+
+    <footer>
+
+      <span>
+        <img class="baker" src="./baker.png" alt="An icon of a baker"/>
+      </span>
+      <span class="contactInfo" id="detailsFooter">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
+        (412) 123 4567
+      </span>
+      <span>
+        <img class="baker right" src="./baker.png" alt="An icon of a baker"/>
+      </span>
+
+    </footer>
+
+
+
+  </body>
+
+</html>

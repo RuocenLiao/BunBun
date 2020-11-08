@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Bun Bun Bake Shop</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&display=swap" 
+    rel="stylesheet">
+    <script src="myScript.js" type="text/javascript">
+    </script>
+  </head>
+
+  <body onload="rerenderCart()">
+
+    <header>
+      <div class="box">
+        <span class="nav">
+          <a href="./index.html">
+          <img class="icon" src="./cinnamon.jpg" alt="An icon of cinnamion roll"/>
+          </a>
+        </span>
+
+        <span class="nav name">
+          <a class="nav name" href="./index.html">
+            Bun Bun Bake Shop
+          </a>
+        </span>
+
+        <!--adding space between nav items with &emsp, &nbsp, &ensp-->
+        <span class="nav home">&emsp; &emsp;&emsp; &emsp; &emsp; &emsp; &ensp; &ensp;
+          &emsp; &emsp; &nbsp;</span>
+        <span class="nav home">
+          <a class="nav home" href="./index.html">
+            Home
+          </a>
+        </span>
+
+        <span class="nav products">&nbsp; &nbsp; &nbsp;</span>
+        <span class="nav products">
+          <a class="nav products bold underline" href="./products.html">
+            Products
+          </a>
+        </span>
+
+        <span class="nav about">&nbsp; &nbsp; &nbsp;</span>
+        <span class="nav about">
+          About
+        </span>
+
+        <span class="nav cart">&nbsp; &nbsp; &nbsp;</span>
+        <span class="nav cart button">
+          <a class="nav cart" href="./cart.html">
+            &nbsp; Cart &nbsp;
+          </a>
+          <span id="count">0</span>
+          <span>&nbsp;</span>
+        </span>
+      </div>
+    </header> 
+
+    <main>
+      
+      <div>
+        <img class="prodTop" src="./prodTop.png" alt="Text on top with circle decorations"/>
+      </div>
+      
+      <div class="prodGrid"> 
+        <!--prodGrid is a 3X2 grid for the 6 items in the store, all evenly spaced and sized-->
+        <div class="original prodItem">
+          <span class="prodText">&nbsp;Original</span>
+          <img class="prodImage centerImage" src="./10.jpg" alt="An image of cinnamon roll"/>
+          <span class="prodText">
+            &nbsp; $3.99 &nbsp; &nbsp; &ensp; &ensp;
+          </span>
+          <span>
+            <a class="details right" href="./details-original.html">
+              &nbsp; &nbsp;Details&nbsp; &nbsp;
+            </a>
+          </span>
+        </div>
+
+        <div class="blackberry prodItem">
+          <span class="prodText">&nbsp;Blackberry</span>
+          <img class="prodImage centerImage" src="./b10.jpg" alt="An image of cinnamon roll"/>
+          <span class="prodText">&nbsp; $3.99 &nbsp; &nbsp; &ensp; &ensp;
+          </span>
+          <span>
+            <a class="details right" href="./details-blackberry.html">
+              &nbsp; &nbsp;Details&nbsp; &nbsp;
+            </a>
+          </span>
+          
+        </div>
+
+        <div class="walnut prodItem">
+          <span class="prodText">&nbsp;Walnut</span>
+          <img class="prodImage centerImage" src="./w10.jpg" alt="An image of cinnamon roll"/>
+          <span class="prodText">&nbsp; $3.99 &nbsp; &nbsp; &ensp; &ensp;
+          </span>
+          <span>
+            <a class="details right" href="./details-walnut.html">
+              &nbsp; &nbsp;Details&nbsp; &nbsp;
+            </a>
+          </span>
+        </div>
+
+        <div class="Original(Gluten-free) prodItem">
+          <span class="prodText">&nbsp;Original(Gluten-free)</span>
+          <img class="prodImage centerImage" src="./ogf10.jpg" alt="An image of cinnamon roll"/>
+          <span class="prodText">&nbsp; $3.99 &nbsp; &nbsp; &ensp; &ensp;
+          </span>
+          <span>
+            <a class="details right" href="./details-original-gluten-free.html">
+              &nbsp; &nbsp;Details&nbsp; &nbsp;
+            </a>
+          </span>
+        </div>
+
+        <div class="pumpkin-spice prodItem">
+          <span class="prodText">&nbsp;Pumpkin Spice</span>
+          <img class="prodImage centerImage" src="./ps10.jpg" alt="An image of cinnamon roll"/>
+          <span class="prodText">&nbsp; $3.99 &nbsp; &nbsp; &ensp; &ensp;
+          </span>
+          <span>
+            <a class="details right" href="./details-pumpkin-spice.html">
+              &nbsp; &nbsp;Details&nbsp; &nbsp;
+            </a>
+          </span>
+        </div>
+
+        <div class="caramel-pecan prodItem">
+          <span class="prodText">&nbsp;Caramel Pecan</span>
+          <img class="prodImage centerImage" src="./cp10.jpg" alt="An image of cinnamon roll"/>
+          <span class="prodText">&nbsp; $3.99 &nbsp; &nbsp; &ensp; &ensp;
+          </span>
+          <span>
+            <a class="details right" href="./details-caramel-pecan.html">
+              &nbsp; &nbsp;Details&nbsp; &nbsp;
+            </a>
+          </span>
+        </div>
+
+      </div>
+ 
+    </main> 
+
+    <footer>
+
+      <span>
+        <img class="baker" src="./baker.png" alt="An icon of a baker"/>
+      </span>
+      <span class="contactInfo" id="productFooter">5000 Forbes Ave. Pittsburgh, PA 15213 <br>
+        (412) 123 4567
+      </span>
+      <span>
+        <img class="baker right" src="./baker.png" alt="An icon of a baker"/>
+      </span>
+
+    </footer>
+
+  </body>
+
+</html>
