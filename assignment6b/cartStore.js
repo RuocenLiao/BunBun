@@ -7,7 +7,7 @@
 /* list of name: value pairs with following properties:
     flavor, quantity, topping, price, imgsrc
 */
-localStorage.clear();
+//localStorage.clear();
 
 const recoveredList = JSON.parse(localStorage.getItem('list') || '[]');
 
@@ -65,8 +65,8 @@ function ready() {
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
-    //buttonClicked.parentElement.parentElement.remove();
-    buttonClicked.parentElement.parentElement.style.display='none';
+    buttonClicked.parentElement.parentElement.remove();
+    //buttonClicked.parentElement.parentElement.style.display='none';
     updateCartTotal();
 }
 
