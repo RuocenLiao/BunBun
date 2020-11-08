@@ -7,7 +7,7 @@
 /* list of name: value pairs with following properties:
     flavor, quantity, topping, price, imgsrc
 */
-//localStorage.clear();
+localStorage.clear();
 
 const recoveredList = JSON.parse(localStorage.getItem('list') || '[]');
 
