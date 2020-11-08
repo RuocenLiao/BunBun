@@ -127,17 +127,25 @@ function updateCartTotal() {
     var cartRows = cartItemContainer.getElementsByClassName('cContainer')
     var total = 0
     var count = cartRows.length
+    var list = []
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cartPrice')[0]
+        var flavor = cartRow.getElementsByClassName('flavor')[0].innerHTML
+        var quantity = cartRow.getElementsByClassName('quantity')[0].innerHTML
+        var topping = cartRow.getElementsByClassName('topping')[0].innerHTML
+        var imgsrc = cartRow.getElementsByClassName('cartImage')[0].src
+
         var price = parseFloat(priceElement.innerText.replace('$', ''))
         total = total + price
-        
+
+        let item = new cartItem(flavor, quantity, topping, price, imgsrc)
+        list.push(item)
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('totalPrice')[0].innerText = '$' + total
-    document.getElementsByClassName('totalPrice')[1].innerText = '$' + total
     updateCounts(count);
+    localStorage.setItem('list', JSON.stringify(list));
 }
 
 function updateCounts(count) {
