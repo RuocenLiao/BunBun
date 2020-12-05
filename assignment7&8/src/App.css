@@ -2,13 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Avenir';
 }
 
 .home,
-.services,
-.products,
-.sign-up {
+.bun-bun,
+.artogether,
+.pandabool,
+.about-me {
   display: flex;
   height: 90vh;
   padding: 0px;
@@ -17,8 +18,8 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('./images/img-2.jpg');
+.bun-bun {
+  background-image: url('./images/bun-bun.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,8 +27,8 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('./images/img-1.jpg');
+.artogether {
+  background-image: url('./images/artogether-bg.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -35,7 +36,16 @@
   font-size: 100px;
 }
 
-.sign-up {
+.pandabool {
+  background-image: url('./images/pandabool.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.about-me {
   background-image: url('./images/img-8.jpg');
   background-position: center;
   background-size: cover;
