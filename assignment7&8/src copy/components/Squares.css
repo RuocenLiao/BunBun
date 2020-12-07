@@ -1,0 +1,196 @@
+.squares {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.squares__item__details {
+  color: black;
+  text-decoration: none;
+}
+
+.squares__item__details > .category {
+  color: gray;
+  font-size: 12px;
+  
+}
+
+.squares__item__details > .label {
+  font-family: "wendy one";
+  line-height: 27px;
+  font-size: 22px;
+}
+
+.squares__item__details > .describe {
+  font-size: 13px;
+}
+
+.squares__item__button {
+  vertical-align: bottom;
+  padding: 10px 20px;
+  border-radius: 15px;
+  align-self: end;
+  border: none;
+  font-weight: bold;
+}
+.squares__item__button:hover {
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  text-decoration: underline;
+}
+
+  
+  .squares__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+
+  
+  .squares__items {
+    margin-bottom: 24px;
+    min-width: 400px;/*!mobile */
+  }
+  
+  .squares__item {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }
+  
+  .squares__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    /*border-style: solid;
+    border-width: 1px;
+    border-color: solid gray;*/
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .details {
+    padding: 20px 25px;
+    border-width: 0px;
+    background-color: rgba(212, 170, 170, 0.05);
+  }
+  
+  .squares__item__pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+
+    overflow: hidden;
+    font-family: "Wendy One", sans-serif;
+  }
+  
+  .squares__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  /*background-color:rgba(150,0,50, 0.8);
+    box-sizing: border-box;*/
+  }
+  
+  .squares__item__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  
+  .squares__item:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease-out;
+    max-width: 1200px;
+
+  }
+
+
+
+  .squares__item__info {
+    padding: 20px 30px 30px;
+
+  }
+  
+  .squares__item__text {
+    color: #fff;
+    background-color: black;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "wendy one";
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 100%;
+    }
+    .squares__item {
+      margin-bottom: 50px;
+      min-width: 400px;/*!desktop */
+    }
+
+      
+    
+  }
+
+  /*breakpoint at 1024px, from three/row to one/row*/
+  @media only screen and (min-width: 1024px) {
+    .squares__item__link {
+      display: flex;
+    }
+    .squares__items {
+      /*display: flex;*/
+      margin-bottom: 70px;
+    }
+    .squares__item {
+      /*display: flex;*/
+      flex-flow: row;
+      margin-bottom: 50px;
+      width: 800px;/*!desktop */
+    }
+
+    
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .squares__item {
+      margin-bottom: 2rem;
+      width: 400px;/*!desktop */
+    }
+
+      .squares__item__pic-wrap::after {
+        font-size: 28px;
+    }
+
+  }
